@@ -10,7 +10,7 @@ start_service() {
 	if [ $wanmode = "1" ] ;then
 	dockerwan=" "
 	else
-	dockerwan="--iptables=false"
+	dockerwan="--iptables=true"
   fi
 
 	procd_open_instance
